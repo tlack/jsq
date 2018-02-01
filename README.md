@@ -74,3 +74,7 @@ run.jsq /automatically start node and run code then exit q repl
 
 net.jsq /tick? workers?
 
+# discuss
+
+http://t.me/qkdbfans
+
