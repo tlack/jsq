@@ -9,9 +9,19 @@ I am distrustful of the newer JS standards and this lets me avoid learning
 
 just a bunch of search and replace filters, really rough
 
-# features
+# example
 
-This thing is really rough right now.
+```
+// only lines with q) are filtered
+q)N::require('net'),Q::require('node-q');
+q)D1::{console.log(x); ::x;}; D0::{::x;} // debug
+q)TE::(e,x,cb){return function(e,x){if(e)throw e;cb(x);}} //trap errors
+q)qcon::{x.ks('.z.pc:{exit 1};online[]');}
+q)boot::{D1('jsboot');Q.connect({host:'localhost',port:5999},TE(qcon))};
+boot();
+```
+
+# features
 
 Only lines beginning with q) are interpreted.
 
@@ -33,6 +43,8 @@ A function with unnamed arguments - these are called x, y, and z by default:
 Return something from a function without all that `return` cruft:
 
 ```q)F::{:: x*y*z}```
+
+Also comes with vim syntax config for jsq.
 
 # use
 
