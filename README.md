@@ -62,6 +62,8 @@ Also comes with vim syntax config for jsq.
 
 ```$ q js.q myfile.jsq```
 
+This will create `myfile.js` which you can then run in Node.
+
 # tbd/future
 
 `q js.q myfile lib run ipc`:
