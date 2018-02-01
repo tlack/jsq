@@ -1,0 +1,12 @@
+// just a thought experiment
+// doesnt work
+q)type::{::typeof x}; isobj::{::type(x)=='object'}; isnum::{::type(x)=='number'};
+q)make::{i::0; r::[]; for(;i<x.length;i++) r[x[i]]=y[i];}    //make object of [x], [y]: {x[0]:y[0], x[1]:y[1], ...}
+q)key::{:: isobj(y) ? Object.keys(y) : null};
+q)val::{:: isobj(y) ? Object.values(y) : null};
+q)ravel::{:: isobj(x) ? make(key(x),y(val(x)) : y(val(x))};
+q)each0::{i::0; r::[]; for(;i<x.length;i++)r.push(y[x[i]]);}
+q)each::{:: ravel(x,each0)}
+q)eachx::{:: ravel(x,each0)}
+q)eachy::{:: ravel(x,each0)}
+q)eachxy::{:: ravel(x,each0)}
