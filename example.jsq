@@ -1,0 +1,10 @@
+// only lines with q) are filtered
+q)N::require('net'),Q::require('node-q');
+q)D1::{console.log(x); ::x;}; D0::{::x;} // debug
+q)TE::(e,x,cb){return function(e,x){if(e)throw e;cb(x);}} //trap errors
+q)qcon::{x.ks('.z.pc:{exit 1};online[]');}
+q)boot::{D1('jsboot');Q.connect({host:'localhost',port:5999},TE(qcon))};
+boot();
+
+
+

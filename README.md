@@ -1,6 +1,6 @@
 # Q-Flavored Javascript Preprocessor
 
-Use this handy filter to vomit 25% less often while writing Javascript.
+Use this handy filter to vomit 25% less often while writing Javascript. 
 
 I am distrustful of the newer JS standards and this lets me avoid learning
 (parts of) them for as long as possible.
@@ -11,7 +11,7 @@ just a bunch of search and replace filters, really rough
 
 # example
 
-Input jsq:
+Input Q-flavored JS (jsq):
 ```
 // only lines with q) are filtered
 q)N::require('net'),Q::require('node-q');
@@ -21,7 +21,7 @@ q)qcon::{x.ks('.z.pc:{exit 1};online[]');}
 q)boot::{D1('jsboot');Q.connect({host:'localhost',port:5999},TE(qcon))};
 boot();
 ```
-Output JS:
+Output vanilla flavored JS:
 ```
 //@generator:jsq
 // only lines with q) are filtered
