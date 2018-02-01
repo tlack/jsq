@@ -62,4 +62,15 @@ Also comes with vim syntax config for jsq.
 
 ```$ q js.q myfile.jsq```
 
+# tbd/future
+
+`q js.q myfile lib run ipc`:
+
+lib.jsq /each(left|right|both) over scan exhaust
+
+ipc.jsq /auto-ipc link to/from host kdb server - tbd
+
+run.jsq /automatically start node and run code then exit q repl
+
+net.jsq /tick? workers?
 
